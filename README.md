@@ -14,11 +14,11 @@
     - all tests run in the k6 cloud offer various charts to be analyzed, but sometimes, when running small load tests, we do not want to use **paid** features of the cloud
 - to offer **free** visualization options for local k6 load tests this project was created
 
-# Dependencies
+## Dependencies
 - Python 3 interpreter
 - `matplotlib` ([https://pypi.org/project/matplotlib/](https://pypi.org/project/matplotlib/))
 
-# Usage
+## Usage
 - run a k6 test and save its output to a file
     - `k6 run --out json=k6_test_results.json test.js`
 - `python3 k6_plotter.py k6_test_results.json`
@@ -26,7 +26,7 @@
 - `python3 k6_plotter.py <metric>`
     - plots the data of the metric identified by it's name (`<metric>`)
 
-# TODO
+## TODO
 - better argparsing
     - pass file to which the chart should be saved in SVG format
     - toggle whether date should be rounded to seconds/minutes,... (minutes by default right now)
